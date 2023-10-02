@@ -11,7 +11,7 @@ import resumeForm from "./routes/resumeForm.js"
 
 
 import cors from 'cors';
-const port = 6000
+const port = 7000
 connectDB()
 const app = express();
 
@@ -32,5 +32,5 @@ app.use('/auth', authRouter);
 app.use('/resume',resumeForm);
 
 app.listen(port,()=>{
-  console.log(`server started at port 6000`);
+  console.log(`server started at port 7000`);
 })
